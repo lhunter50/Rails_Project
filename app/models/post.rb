@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
-  validates :title
+  validates :title, presence: true.
+                    langth:{minimum: 5}
 
 end
